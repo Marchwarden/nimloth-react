@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { SafeAreaView } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
 import { Text } from '@rneui/themed';
 import { CustomText, LoginBackground } from '../../../../components';
+import RingGraph from "../../../../components/RingGraph/index";
+
 
 const FriendsScreen = () => {
   const [accountBalance, setAccountBalance] = useState('0.00'); // need to fetch data from BE for this
 
   return (
-    <SafeAreaView
-      style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
-    >
+    <SafeAreaView>
+      <RingGraph/>
       <Text style={{ fontSize: 50 }}>$ {accountBalance}</Text>
-      <Text>Cash balance</Text>
     </SafeAreaView>
   );
 };
