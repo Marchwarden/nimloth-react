@@ -4,6 +4,7 @@ import Svg, {G, Circle} from 'react-native-svg'
 import { RingDimens } from './styles';
 
 export default function RingGraph({
+    percentage = 75,
     radius = 106,
     strokeWidth = 14,
     color = 'purple',
@@ -20,7 +21,7 @@ export default function RingGraph({
                 <G> 
                     <Circle
                      cx = '50%'
-                     cy = '25%'
+                     cy = '29%'
                      stroke = {color}
                      strokeWidth = {strokeWidth}
                      r = {radius}
@@ -29,14 +30,15 @@ export default function RingGraph({
                      />
                     <Circle 
                      cx = '50%'
-                     cy = '25%'
+                     cy = '29%'
                      stroke = {color}
                      strokeWidth = {strokeWidth}
                      r = {radius}
                      strokeOpacity = {1}
                      fill = "transparent"
                      strokeDasharray={circleCircumference}
-                     strokeDashoffset={0}
+                     strokeDashoffset={circleCircumference/3}
+                     strokeLinecap = 'round'
                      />
                 </G>
             </Svg>
