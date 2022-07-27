@@ -4,39 +4,42 @@ import Svg, {G, Circle} from 'react-native-svg'
 import { RingDimens } from './styles';
 
 export default function RingGraph({
-    radius = 110,
-    strokeWidth = 20,
+    radius = 106,
+    strokeWidth = 14,
     color = 'purple',
-
+    
 }) {
     const halfCircle = radius + strokeWidth;
+    const circleCircumference = 2*Math.PI*radius;
+    
     return (
-        <View>
+        <SafeAreaView style={{backgroundColor: '#F3F5F6' }}>
             <Svg 
-                width = {(radius+strokeWidth)*2}
-                height = {(radius+strokeWidth)*2}
-                viewBox = {'0 0 ${halfCircle*2} $halfCircle*2}'}>
-                <G>
+                viewBox = {'0 0 {2*halfCircle} {2*halfCircle}'}
+               >
+                <G> 
                     <Circle
-                     cx = "50%"
-                     cy = "50%"
+                     cx = '50%'
+                     cy = '25%'
                      stroke = {color}
                      strokeWidth = {strokeWidth}
                      r = {radius}
-                     strokeOpacity = {.1}
+                     strokeOpacity = {.2}
                      fill = "transparent"
                      />
                     <Circle 
-                     cx = "50%"
-                     cy = "50%"
+                     cx = '50%'
+                     cy = '25%'
                      stroke = {color}
                      strokeWidth = {strokeWidth}
                      r = {radius}
                      strokeOpacity = {1}
                      fill = "transparent"
+                     strokeDasharray={circleCircumference}
+                     strokeDashoffset={0}
                      />
                 </G>
             </Svg>
-        </View>
+        </SafeAreaView>
     )
 }
