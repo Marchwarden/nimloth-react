@@ -13,7 +13,6 @@ import { CustomText, LoginBackground } from '../../../../components';
 const ChartsScreen = () => {
   return (
     <SafeAreaView>
-      <CustomText>Bezier Line Chart</CustomText>
       <LineChart
         data={{
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
