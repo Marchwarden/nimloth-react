@@ -16,13 +16,13 @@ export const walletStyles = StyleSheet.create({
         fontFamily: 'Urbanist-SemiBold',
         textAlign: 'center',
         elevation: 10,
-        top: 200   
+        top: 155   
     },
     balanceTextStyle: {
         fontSize: 17,
         fontFamily: 'Urbanist-Light',
         textAlign: 'center',
         elevation: 10,
-        top: 200 
+        top: 155 
     }
 })

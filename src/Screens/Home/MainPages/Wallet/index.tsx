@@ -14,6 +14,7 @@ const FriendsScreen = () => {
           <Text style = {walletStyles.titleStyle}>Wallet</Text>
           <Text style = {walletStyles.balanceStyle}>${accountBalance}</Text>
           <Text style = {walletStyles.balanceTextStyle}>Portfolio</Text>
+          
     </SafeAreaView>
   );
 };

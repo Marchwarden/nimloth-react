@@ -6,11 +6,14 @@ import { StyleSheet, Text } from 'react-native';
     container:{
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        elevation: 5,
+        top: 220,
     },
     graphWrapper:{
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        elevation: 5
     },
     label: {
       position: "absolute",
