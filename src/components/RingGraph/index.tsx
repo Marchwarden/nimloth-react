@@ -3,6 +3,8 @@ import {View, Text} from 'react-native';
 import {styles} from './styles'
 import Svg, { G, Circle } from "react-native-svg";
 
+
+
 const RingGraph = () => {
 
 const radius = 65;

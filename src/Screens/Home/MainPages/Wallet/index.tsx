@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, SafeAreaView } from 'react-native';
 import { Text } from '@rneui/themed';
-import { walletStyles } from './styles';
+import { TitleText, BalanceText, BalanceNameText } from './styles';
 import RingGraph from '@components/RingGraph';
 
 
@@ -11,10 +11,9 @@ const FriendsScreen = () => {
   return (
     <SafeAreaView>
         <RingGraph></RingGraph>
-          <Text style = {walletStyles.titleStyle}>Wallet</Text>
-          <Text style = {walletStyles.balanceStyle}>${accountBalance}</Text>
-          <Text style = {walletStyles.balanceTextStyle}>Portfolio</Text>
-          
+          <TitleText>Wallet</TitleText>
+          <BalanceText>${accountBalance}</BalanceText>
+          <BalanceNameText>Portfolio</BalanceNameText> 
     </SafeAreaView>
   );
 };
