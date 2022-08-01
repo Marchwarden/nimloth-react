@@ -11,9 +11,11 @@ const FriendsScreen = () => {
   return (
     <SafeAreaView>
         <RingGraph></RingGraph>
+        <View style ={{alignItems: 'center'}}>
           <TitleText>Wallet</TitleText>
           <BalanceText>${accountBalance}</BalanceText>
-          <BalanceNameText>Portfolio</BalanceNameText> 
+          <BalanceNameText>Portfolio</BalanceNameText>
+        </View>
     </SafeAreaView>
   );
 };
