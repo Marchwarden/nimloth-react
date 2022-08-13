@@ -1,18 +1,13 @@
 import React from 'react';
-import { SafeAreaView, View, Dimensions } from 'react-native'; // replace using dimensions from react-native
-import {
-  LineChart,
-  BarChart,
-  PieChart,
-  ProgressChart,
-  ContributionGraph,
-  StackedBarChart,
-} from 'react-native-chart-kit';
-import { CustomText, LoginBackground } from '../../../../components';
+import { View } from 'react-native';
+import { Text } from '@rneui/themed';
+import Tabs from '@components/Tabs';
+import { SizedBox } from '@components/';
 
 const ChartsScreen = () => {
   return (
     <SafeAreaView>
+      <CustomText>Bezier Line Chart</CustomText>
       <LineChart
         data={{
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],

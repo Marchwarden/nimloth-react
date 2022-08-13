@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { View, SafeAreaView } from 'react-native';
-// TODO: fix this custom path import
-// eslint-disable-next-line import/no-unresolved
 import Dropdown from '@components/Dropdown';
 import {
   SendButton,
@@ -116,8 +114,9 @@ const SendScreen = () => {
         marginTop: 60,
       }}
     >
-      <FriendsSearchBar onChangeText={handleSearch} />
-
+      <View style={{ marginTop: 60 }}>
+        <FriendsSearchBar onChangeText={handleSearch} />
+      </View>
       <View style={{ alignItems: 'center', justifyContent: 'center' }}>
         <MoneyText>${money}</MoneyText>
       </View>

@@ -14,21 +14,21 @@ export const SendIcon = styled(Icon).attrs({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 50,
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
   },
 })``;
 
 export const FriendsIcon = styled(Icon).attrs({
   type: 'font-awesome-5',
   name: 'users',
-  size: 30,
+  size: 20,
 })``;
 
 export const ChartsIcon = styled(Icon).attrs({
   type: 'font-awesome-5',
   name: 'chart-bar',
-  size: 30,
+  size: 20,
   containerStyle: {
     marginLeft: 15,
   },
@@ -37,13 +37,13 @@ export const ChartsIcon = styled(Icon).attrs({
 export const WalletIcon = styled(Icon).attrs({
   type: 'font-awesome-5',
   name: 'wallet',
-  size: 30,
+  size: 20,
 })``;
 
 export const HistoryIcon = styled(Icon).attrs({
   type: 'font-awesome-5',
   name: 'clock',
-  size: 30,
+  size: 20,
   containerStyle: {
     marginRight: 15,
   },
@@ -57,13 +57,14 @@ export const StyledTabNavigator = styled(Tab.Navigator).attrs({
     tabBarShowLabel: false,
     tabBarStyle: {
       height: 65,
+      marginTop: 20,
       marginRight: 15,
       marginLeft: 15,
       marginBottom: 30,
       borderRadius: 100,
     },
     headerTitleStyle: {
-      fontSize: 32,
+      fontSize: 26,
       fontFamily: 'Urbanist',
     },
   },
